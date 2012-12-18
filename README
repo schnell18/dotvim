@@ -1,0 +1,9 @@
+Linux/Unix Installation:
+
+git clone git://github.com/schnell18/dotvim.git ~/.vim
+ln -s ~/.vim/vimrc ~/.vimrc
+
+Windows Installation:
+
+git clone git://github.com/schnell18/dotvim.git ~/vimfiles
+copy c:\Users\<YOUR_LOGIN>\vimfiles\vimrc c:\Users\<YOUR_LOGIN>\_vimrc
