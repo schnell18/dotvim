@@ -2,7 +2,12 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-source $VIM/_vimrc
+if has("unix")
+    source $VIM/vimrc
+elseif has("win32")
+    source $VIM/_vimrc
+endif
+
 colorscheme evening
 
 "SQLite profiles
