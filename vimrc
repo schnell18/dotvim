@@ -8,7 +8,14 @@ elseif has("win32")
     source $VIM/_vimrc
 endif
 
-colorscheme evening
+if has("gui_win32") || has("gui_win32s")
+    set background=dark
+    colorscheme solarized
+endif
+
+"Fix for fugitive Gdiff E302 error
+set directory+=,~/tmp,$TMP
+
 
 "SQLite profiles
 let g:dbext_default_SQLITE_bin = 'sqlite3'
