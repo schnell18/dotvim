@@ -1,10 +1,9 @@
 "Initialize pathogen
 call pathogen#infect()
 
-set guifont=Inconsolata:h14,Fixedsys:h12,Consolas:h12
 
 if has("unix")
-    source $VIM/vimrc
+    set guifont=Ubuntu\ Mono\ 12
 elseif has("win32")
     source $VIM/_vimrc
     "Fix for fugitive Gdiff E302 error
@@ -12,6 +11,7 @@ elseif has("win32")
 endif
 
 if has("gui_win32") || has("gui_win32s")
+    set guifont=Inconsolata:h12,Fixedsys:h12,Consolas:h12
     set background=dark
     colorscheme solarized
     call togglebg#map("<F5>")
