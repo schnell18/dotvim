@@ -8,7 +8,11 @@ colorscheme solarized
 call togglebg#map("<F5>")
 
 if has("unix")
-    set guifont=Ubuntu\ Mono\ 12
+    if system('uname') =~ 'Darwin'
+        set guifont=Menlo\ Regular:h14
+    else
+        set guifont=Ubuntu\ Mono\ 12
+    endif
 elseif has("win32")
     source $VIM/_vimrc
     "Fix for fugitive Gdiff E302 error
