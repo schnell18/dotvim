@@ -1,11 +1,12 @@
 "Initialize pathogen
 call pathogen#infect()
 
-
-"Enable solarized color scheme
-set background=dark
-colorscheme solarized
-call togglebg#map("<F5>")
+if has("gui_running")
+    "Enable solarized color scheme
+    set background=dark
+    colorscheme solarized
+    call togglebg#map("<F5>")
+endif
 
 if has("unix")
     if system('uname') =~ 'Darwin'
