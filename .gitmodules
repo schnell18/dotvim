@@ -15,10 +15,13 @@
 	url = git://github.com/tpope/vim-commentary.git
 [submodule "bundle/vim-unimpaired"]
 	path = bundle/vim-unimpaired
-	url = git://github.com/tpope/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired
 [submodule "bundle/supertab"]
 	path = bundle/supertab
-	url = git://github.com/ervandew/supertab
+	url = https://github.com/ervandew/supertab
 [submodule "bundle/pytest"]
 	path = bundle/pytest
-	url = git://github.com/alfredodeza/pytest.vim
+	url = https://github.com/alfredodeza/pytest.vim
+[submodule "bundle/dbext"]
+	path = bundle/dbext
+	url = https://github.com/vim-scripts/dbext.vim
