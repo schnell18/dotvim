@@ -24,6 +24,10 @@ if has("gui_win32") || has("gui_win32s")
     set guifont=Inconsolata:h12,Fixedsys:h12,Consolas:h12
 endif
 
+"Enable filetype plugin
+filetype plugin on
+syntax on
+
 "Set status line to contain git branch name
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
