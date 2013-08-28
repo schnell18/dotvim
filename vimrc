@@ -8,9 +8,14 @@ if has("gui_running")
     call togglebg#map("<F5>")
 endif
 
+"Always display statusline
+set laststatus=2
 if has("unix")
+    "Load the powerline plugin
+    set runtimepath+=~/.vim/bundle/powerline/powerline/bindings/vim
+
     if system('uname') =~ 'Darwin'
-        set guifont=Menlo\ Regular:h14
+        set guifont=Menlo\ Regular\ for\ Powerline:h14
     else
         set guifont=Ubuntu\ Mono\ 12
     endif
@@ -18,6 +23,8 @@ elseif has("win32")
     source $VIM/_vimrc
     "Fix for fugitive Gdiff E302 error
     set directory+=,~/tmp,$TMP
+    "Load the powerline plugin
+    set runtimepath+=~/vimfiles/bundle/powerline/powerline/bindings/vim
 endif
 
 if has("gui_win32") || has("gui_win32s")
@@ -27,9 +34,6 @@ endif
 "Enable filetype plugin
 filetype plugin on
 syntax on
-
-"Set status line to contain git branch name
-set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
 "Auto clean fugitive buffers
 if has("autocmd")
