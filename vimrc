@@ -56,7 +56,6 @@ map ,pt  <Esc>:%! perltidy<CR>
 map ,ptv <Esc>:'<,'>! perltidy<CR>
 map ,t   <Esc>:!prove -v %<CR>
 nmap ,v :tabedit $MYVIMRC<CR>
-nmap ,z :Matrix<CR>
 nmap ,q :!perl %<CR>
 nmap ,a :!python %<CR>
 
