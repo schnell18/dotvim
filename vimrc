@@ -59,7 +59,13 @@ nmap ,v :tabedit $MYVIMRC<CR>
 nmap ,q :!perl %<CR>
 nmap ,a :!python %<CR>
 
-" Pytest
+" mapping for tabularize
+nmap ,a= :Tabularize /=<CR>
+vmap ,a= :Tabularize /=<CR>
+nmap ,a: :Tabularize /:\zs<CR>
+vmap ,a: :Tabularize /:\zs<CR>
+
+"" Pytest
 nmap <silent>,f <Esc>:Pytest file<CR>
 nmap <silent>,c <Esc>:Pytest class<CR>
 nmap <silent>,m <Esc>:Pytest method<CR>
