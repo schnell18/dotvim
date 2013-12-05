@@ -32,6 +32,9 @@ elseif has("win32")
     endif
 endif
 
+"Enable modeline
+set modelines=1
+
 "Enable filetype plugin
 filetype plugin on
 syntax on
