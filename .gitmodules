@@ -31,3 +31,6 @@
 [submodule "bundle/vim-matrix"]
 	path = bundle/vim-matrix
 	url = https://github.com/uguu-org/vim-matrix-screensaver.git
+[submodule "bundle/emmet-vim"]
+	path = bundle/emmet-vim
+	url = https://github.com/mattn/emmet-vim.git
