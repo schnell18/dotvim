@@ -32,7 +32,7 @@ Here are the commands relevant to Windows for your convenience:
     git clone --recurse-submodules git://github.com/schnell18/dotvim.git vimfiles
     copy vimfiles\vimrc _vimrc
 
-The vimrc on Windows uses the free Inconsolata font by default, you may
-download it from [here][1].
+The vimrc on Windows uses a patched free Inconsolata font for powerline
+, you may download it from [here][1].
 
-[1]: http://www.levien.com/type/myfonts/Inconsolata.otf. "Inconsolata Font site"
+[1]: https://github.com/Lokaltog/powerline-fonts/blob/master/Inconsolata/Inconsolata%20for%20Powerline.otf?raw=true 
