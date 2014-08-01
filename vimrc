@@ -39,6 +39,12 @@ set modelines=1
 filetype plugin on
 syntax on
 
+"Set default shift width, tab stop, text width etc
+set sw=4
+set ts=4
+set tw=72
+set expandtab
+
 "Auto clean fugitive buffers
 if has("autocmd")
     autocmd BufReadPost fugitive://* set bufhidden=delete
