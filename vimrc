@@ -78,3 +78,14 @@ vmap ,a: :Tabularize /:\zs<CR>
 nmap <silent>,f <Esc>:Pytest file<CR>
 nmap <silent>,c <Esc>:Pytest class<CR>
 nmap <silent>,m <Esc>:Pytest method<CR>
+nmap ,e :TlistOpen<CR>
+let g:dbext_default_MYSQL_bin = 'mysql'
+let g:dbext_default_profile_mysqlcvc = 'type=MYSQL:user=cvc:dbname=cvc'
+
+"Highlight trailing spaces
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
