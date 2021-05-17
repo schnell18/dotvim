@@ -113,7 +113,7 @@ vmap ,js :!~/bin/json_tidy.py<CR>
 call minpac#add('aklt/plantuml-syntax')
 " call minpac#add('altercation/vim-colors-solarized')
 call minpac#add('ekalinin/Dockerfile.vim')
-" call minpac#add('ervandew/supertab')
+call minpac#add('ervandew/supertab')
 call minpac#add('godlygeek/tabular')
 call minpac#add('tpope/vim-commentary')
 call minpac#add('tpope/vim-fugitive')
